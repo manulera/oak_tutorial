@@ -10,6 +10,8 @@ I have the same problem with go enrichment, using the below command:
 runoak -i sqlite:obo:go -G gaf -g input/go_annotations.gaf enrichment -p i -U pombe_genes.tsv -B input/background_protein_coding.tsv -O csv -o go_enrichment.csv
 ```
 
+The files I used can be found in [this repo](https://github.com/manulera/oak_tutorial). The weird thing is that once I used `sqlite:obo:fypo` when doing the go enrichment, and it did not complain about anything, so maybe I am doing something entirely wrong here?
+
 For phenotype, I have reformatted our phenotype annotations to match that of the hpoa (first column is the gene id, fourth column is the phenotype identifier). head of the file `input/pombe_phenotypes.tsv`looks like this:
 
 ```
