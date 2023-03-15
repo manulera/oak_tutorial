@@ -19,5 +19,9 @@ runoak -vv -i sqlite:obo:go relationships –-predicates i,p nucleus
 
 
 
+To append PomBase: to make systematic ids CURIEs:
 
+```
+sed -i -e 's/^/PomBase:/' input/pombe_phenotypes.tsv
+```
 
